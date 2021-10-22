@@ -1,0 +1,109 @@
+:root {
+    --vermelho: #ff0000;
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza: #808080;
+}
+
+/* Elementos base */
+
+body {
+    background-color: var(--preto);
+    font-family: sans-serif;
+    color: var(--branco);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgb(0, 0, 0, .50), rgb(0, 0, 0, .50)100%),url('/img/arquivox.jpg');
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.titulo {
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    
+    margin-top: 15%;
+}
+
+.botao {
+    background-color: rgb(0, 0, 0, .50);
+    border: none;
+    color: var(--branco);
+
+    padding: 15px 20px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 3s;
+}
+
+.botao:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
